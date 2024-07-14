@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,29 +8,33 @@
 }
 
 /* Shared Styles */
-.display-flex{
+.display-flex {
     display: flex;
 }
 
-.dark-1{
+.dark-1 {
     color: #131313;
 }
-.dark-2{
+
+.dark-2 {
     color: #424242;
 }
-.dark-3{
+
+.dark-3 {
     color: #727272;
 }
-.white{
+
+.white {
     color: #FFFFFF;
 }
-.orange{
+
+.orange {
     color: #FF900E;
 }
 
-.btn-primary{
-    width: 11.25rem;
-    height: 4rem;
+.btn-primary {
+    width: 180px;
+    height: 64px;
     font-size: 1.25rem;
     font-weight: 500;
     border: none;
@@ -40,71 +44,126 @@
 }
 
 
-.bg-light{
+.bg-light {
     background: rgba(255, 144, 14, 0.1);
 }
+
+.description {
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 /* Header Styles */
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 50px;
 }
-.brand{
+
+.brand {
     font-weight: 700;
     font-size: 2.8rem;
 }
-.nav-item{
+
+.nav-item {
     list-style: none;
     margin-right: 30px;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     font-weight: 500;
     color: #424242;
     font-size: 1.12rem;
 }
 
-.navbar, .banner{
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
 }
 
 /* banner styles */
-.banner{
+.banner {
     margin-top: 116px;
 }
-.banner-content{
+
+.banner-content {
     max-width: 862px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4rem;
     font-weight: bold;
     color: #131313;
 }
-.banner-description{
+
+.banner-description {
     font-size: 1rem;
     color: #727272;
     line-height: 26px;
     margin-top: 24px;
     margin-bottom: 32px;
 }
-.banner-image{
+
+.banner-image {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 45px;
 }
 
+/* teams section styling */
+.teams {
+    gap: 79px;
+    margin-top: 85px;
+    align-items: center;
+    margin-bottom: 130px;
+}
 
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.team-img-container img{
+    width: 100%;
+}
+.our-features {
+    max-width: 537px;
+}
+
+.our-features .section-title {
+    font-size: 2.81rem;
+}
+
+#quick-list {
+    font-weight: lighter;
+}
+.feature-description{
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
 
 /* Responsive Styles */
 @media screen and (max-width: 576px) {
-    .navbar, 
-    .nav-links{
+    .navbar,
+    .nav-links, .teams {
         flex-direction: column;
+    }
+    .our-features{
+        padding: 0 20px;
     }
 
 }
