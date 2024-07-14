@@ -41,6 +41,7 @@
     background: #FF900E;
     color: #FFFFFF;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 
@@ -328,7 +329,9 @@ main {
         align-items: center;
         gap: 10px;
     }
-
+    #f2-description {
+        padding: 20px;
+    }
     #experience-badge {
         width: 160px;
         height: 80px;
